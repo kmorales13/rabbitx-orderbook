@@ -1,7 +1,7 @@
 import { useOrderbookConnection } from "./hooks/useOrderbookConnection"
 import { useOrderUpdater } from "./hooks/useOrderUpdater"
 import OrderTable from "./components/OrderTable"
-import { useMarketInfoConnection } from "./market-info/hooks/useMarketInfoConnection"
+import { useMarketInfoConnection } from "../market-info/hooks/useMarketInfoConnection"
 import MarketPrice from "./components/OrdersMarketPrice"
 
 interface OrderbookProps {

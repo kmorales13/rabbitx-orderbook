@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react"
 import { Subscription } from "centrifuge"
-import { useCentrifuge } from "../../../../context/CentrifugeConnection"
+import { useCentrifuge } from "../../../context/CentrifugeConnection"
 
 export type MarketInfoType = {
   last_trade_price: string,

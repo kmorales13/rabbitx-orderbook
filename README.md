@@ -10,11 +10,11 @@ The RabbitX Orderbook application fetches orderbook data from the RabbitX API us
 
 The project follows a component-based architecture, with separate components for the orderbook table, market price indicator, and WebSocket connection management. It uses TypeScript for static typing and Tailwind CSS for styling, ensuring a responsive and visually appealing user interface.
 
-The application maintains a WebSocket connection to the RabbitX API using the Centrifuge library. It listens for updates to the orderbook and updates the UI in real-time, providing users with the latest market data.
+The application maintains a WebSocket connection to the RabbitX API using the Centrifuge library. It listens for updates to the orderbook and updates the UI in real time, providing users with the latest market data.
 
 ## Challenges Faced
 
-One challenge faced during development was managing the state of the orderbook efficiently. Since the orderbook data can be large and updates can occur frequently, optimizing the rendering performance was crucial. This was addressed by using React's virtual DOM and optimizing the component re-renders.
+One challenge faced during development was managing the state of the orderbook efficiently. Since the orderbook data can be large and updates can occur frequently, optimizing the rendering performance was crucial. This was addressed by using React's `useRef` to update the local data and an interval of a second to update the state, optimizing the component re-renders.
 
 Another challenge was handling WebSocket connection errors and reconnections. Implementing logic to reconnect to the WebSocket server in case of disconnection and handling errors gracefully was important to ensure a smooth user experience.
 

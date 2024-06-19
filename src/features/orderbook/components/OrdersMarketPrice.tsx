@@ -1,4 +1,4 @@
-import { MarketInfoType } from "../market-info/hooks/useMarketInfoConnection"
+import { MarketInfoType } from "../../market-info/hooks/useMarketInfoConnection"
 
 interface MarketPriceProps {
   marketInfo: MarketInfoType | undefined

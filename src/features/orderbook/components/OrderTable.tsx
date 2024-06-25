@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import type { ReactElement } from 'react'
 import OrderRow from './OrderRow'
 import OrderTableHeader from './OrderTableHeader'
 
@@ -17,13 +17,13 @@ function OrderTable({ order, isAsks = false }: OrderTableProps) {
 
   const orderRows: ReactElement[] = []
 
-  sortedPrices.forEach(price => {
+  for (const price of sortedPrices) {
     const size = order.get(price)
     if (size !== undefined) {
       cumulativeSize += size
       orderRows.push(<OrderRow key={price} price={price} size={size} cumulative={cumulativeSize} total={totalSize} isAsks={isAsks} />)
     }
-  })
+  }
 
   return (
     <table className="table table-xs table-pin-rows table-fixed min-h-96">

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react"
-import { Subscription } from "centrifuge"
+import type { Subscription } from "centrifuge"
 import { mergeOrders } from "../utils/mergeOrders"
 import { useCentrifuge } from "../../../context/CentrifugeConnection"
 

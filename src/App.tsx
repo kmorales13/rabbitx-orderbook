@@ -7,7 +7,7 @@ function App() {
       <div className="text-center">
         <h1 className="text-4xl">Rabbit<span className="text-red-500">X</span> Orderbook</h1>
         <span>by:&nbsp;
-          <a href="https://www.linkedin.com/in/kvmorales/" target="_blank" className="text-blue-500 font-semibold">Kevin Morales</a>
+          <a href="https://www.linkedin.com/in/kvmorales/" target="_blank" className="text-blue-500 font-semibold" rel="noreferrer">Kevin Morales</a>
         </span>
       </div>
       

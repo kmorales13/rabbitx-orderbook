@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useContext, useEffect, useRef, useState } from "react"
+import { type ReactNode, createContext, useContext, useEffect, useRef, useState } from "react"
 import { Centrifuge, State } from "centrifuge"
 import { WS_TOKEN } from "../const"
 

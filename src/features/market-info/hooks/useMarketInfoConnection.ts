@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react"
-import { Subscription } from "centrifuge"
+import type { Subscription } from "centrifuge"
 import { useCentrifuge } from "../../../context/CentrifugeConnection"
 
 export type MarketInfoType = {

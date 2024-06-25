@@ -26,7 +26,7 @@ function OrderTable({ order, isAsks = false }: OrderTableProps) {
   }
 
   return (
-    <table className="table table-xs table-pin-rows table-fixed min-h-96">
+    <table className="table table-xs table-pin-rows table-fixed h-full">
       {isAsks && <OrderTableHeader />}
       <tbody>
         {isAsks ? orderRows.reverse() : orderRows}

@@ -19,16 +19,16 @@ function Orderbook({ symbol }: OrderbookProps) {
 
   return (
     <>
-      <div className="relative card w-96 h-fit bg-base-100 shadow-xl">
-        <div className="card-body">
+      <div className="relative card w-96 h-[80%] bg-base-100 shadow-xl">
+        <div className="card-body h-full">
           <h2 className="card-title z-20">{`${symbol.from}/${symbol.to}`}</h2>
-          <div className="flex flex-col-reverse h-96 overflow-auto text-red-400 flash-red">
+          <div className="flex flex-col-reverse min-h-[100px] h-[50%] overflow-auto text-red-400 flash-red">
             <OrderTable order={orders.asks} isAsks={true} />
           </div>
 
           <MarketPrice marketInfo={marketInfo} />
 
-          <div className="flex flex-col h-96 overflow-auto text-green-400 flash-green">
+          <div className="flex flex-col min-h-[100px] h-[50%] overflow-auto text-green-400 flash-green">
             <OrderTable order={orders.bids} />
           </div>
         </div>

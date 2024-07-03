@@ -14,7 +14,7 @@ The application maintains a WebSocket connection to the RabbitX API using the Ce
 
 ## Challenges Faced
 
-One challenge faced during development was managing the state of the orderbook efficiently. Since the orderbook data can be large and updates can occur frequently, optimizing the rendering performance was crucial. This was addressed by using React's `useRef` to update the local data and an interval of a second to update the state, optimizing the component re-renders.
+One challenge faced during development was managing the state of the orderbook efficiently. Since the orderbook data can be large and updates can occur frequently, optimizing the rendering performance was crucial. This was addressed by using React's `useRef` to update the local state and an interval to update the UI, optimizing the component re-renders.
 
 Another challenge was handling WebSocket connection errors and reconnections. Implementing logic to reconnect to the WebSocket server in case of disconnection and handling errors gracefully was important to ensure a smooth user experience.
 
